@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>转换域名</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input {
+      padding: 10px;
+      margin: 10px 0;
+      width: 80%;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h2>转换域名</h2>
+  <form id="replaceForm">
+    <label for="oldDomain">旧域名:</label>
+    <input type="text" id="oldDomain" placeholder="例如: a.com" required />
+    <br />
+    <label for="newDomain">新域名:</label>
+    <input type="text" id="newDomain" placeholder="例如: a.net" required />
+    <br />
+    <button type="submit">开始替换</button>
+  </form>
+  <div id="result"></div>
+  <script src="domain-replace.js"></script>
+</body>
+</html>
